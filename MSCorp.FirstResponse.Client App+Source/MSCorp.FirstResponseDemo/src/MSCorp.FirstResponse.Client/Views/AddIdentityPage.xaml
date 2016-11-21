@@ -1,0 +1,115 @@
+﻿<Page
+    x:Class="MSCorp.FirstResponse.Client.Views.AddIdentityPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MSCorp.FirstResponse.Client.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="320">
+
+    <Grid Background="{ThemeResource SidePaneBackgroundThemeBrush}">
+        <StackPanel>
+            <TextBlock TextWrapping="Wrap" Text="Identity Search" Style="{StaticResource DetailSubtitleTextBlockStyle}" Margin="20,5,0,5"/>
+            <TextBox TextWrapping="NoWrap" Background="Transparent" Margin="20,0" Foreground="#FFFCFCFC" SelectionHighlightColor="#FF0078D7" RequestedTheme="Dark"/>
+            <TextBlock TextWrapping="Wrap" Text="Sex" Style="{StaticResource DetailSubtitleTextBlockStyle}" Margin="20,5,10,5"/>
+            <ComboBox x:Name="SexSelectBox" Width="280" Margin="20,0,0,0" Foreground="White" BorderBrush="#66FFFFFF" Background="Transparent" RequestedTheme="Dark" >
+                <ComboBoxItem Content="Any" IsSelected="True"/>
+                <ComboBoxItem Content="Male"/>
+                <ComboBoxItem Content="Female"/>
+            </ComboBox>
+
+            <TextBlock TextWrapping="Wrap" Text="Eye Color" Style="{StaticResource DetailSubtitleTextBlockStyle}" Margin="20,5,0,5"/>
+            <ComboBox x:Name="EyeColorSelectBox" Width="280" Margin="20,0,0,0" Foreground="White" BorderBrush="#66F9F8F8" Background="Transparent" RequestedTheme="Dark" >
+                <ComboBoxItem Content="Any" IsSelected="True"/>
+                <ComboBoxItem Content="Brown"/>
+                <ComboBoxItem Content="Blue"/>
+                <ComboBoxItem Content="Green"/>
+                <ComboBoxItem Content="Hazel"/>
+                <ComboBoxItem Content="Gray"/>
+            </ComboBox>
+
+            <TextBlock TextWrapping="Wrap" Text="Hair Color" Style="{StaticResource DetailSubtitleTextBlockStyle}" Margin="20,5,10,5"/>
+            <ComboBox x:Name="HairColorSelectBox" Width="280" Margin="20,0,0,0" BorderBrush="#66FFFFFF" Background="Transparent" RequestedTheme="Dark" >
+                <ComboBoxItem Content="Any" IsSelected="True"/>
+                <ComboBoxItem Content="Brown"/>
+                <ComboBoxItem Content="Black"/>
+                <ComboBoxItem Content="Blonde"/>
+                <ComboBoxItem Content="Red"/>
+            </ComboBox>
+            <Button Content="Search" Style="{StaticResource SearchButtonButtonStyle}" Click="OnSearchButtonClick" Margin="0,10,20,0" Width="100" RequestedTheme="Dark" HorizontalAlignment="Right"/>
+
+            <Grid Margin="5,0,20,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="275*"/>
+                    <ColumnDefinition Width="32*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock TextWrapping="Wrap" Text="Males" Style="{StaticResource DetailSubtitleTextBlockStyle}" HorizontalAlignment="Left" Margin="19,5,0,0" Width="62"/>
+                <TextBlock x:Name="MaleResultCount" Text="0"  Style="{StaticResource DetailSubtitleTextBlockStyle}" Grid.Column="1" Margin="0,5,4,0" Width="10" HorizontalAlignment="Right"/>
+            </Grid>
+            <Rectangle Fill="#66FFFFFF" Height="1" Stroke="Transparent" Margin="20,10,20,5"/>
+
+            <ListView x:Name="SearchResultsMale" Margin="0,0,0,0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="0,0,0,0" Padding="0,10">
+                            <StackPanel Orientation="Horizontal" Margin="0" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <Ellipse Width="45" Height="45" Margin="15,0,0,0">
+                                    <Ellipse.Fill>
+                                        <ImageBrush ImageSource="{Binding Suspect.SuspectSearchImagePath}"/>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <StackPanel Orientation="Vertical" Margin="15,0,0,0">
+                                    <TextBlock Text="{Binding Suspect.Name}" Style="{StaticResource DetailSubtitleTextBlockStyle}" FontSize="14.667" Margin="0"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding Suspect.EyeColor}" Style="{StaticResource DetailSubtitleTextBlockStyle}" FontSize="10.667"/>
+                                        <TextBlock Text=" eyes," Style="{StaticResource DetailSubtitleTextBlockStyle}" FontSize="10.667"/>
+                                        <TextBlock Text="{Binding Suspect.HairColor}" Style="{StaticResource DetailSubtitleTextBlockStyle}" Margin="10,5,0,0" FontSize="10.667"/>
+                                        <TextBlock Text=" hair" Style="{StaticResource DetailSubtitleTextBlockStyle}" FontSize="10.667"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                            <CheckBox RequestedTheme="Dark" HorizontalAlignment="Right" Margin="0,0,-90,0" VerticalAlignment="Center" Width="122" Content="" IsChecked="{Binding AddToIncident, Mode=TwoWay}"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Grid Margin="5,0,20,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="275*"/>
+                    <ColumnDefinition Width="32*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock TextWrapping="Wrap" Text="Females" Style="{StaticResource DetailSubtitleTextBlockStyle}" HorizontalAlignment="Left" Margin="19,5,0,0" Width="62"/>
+                <TextBlock x:Name="FemaleResultCount" Text="0"  Style="{StaticResource DetailSubtitleTextBlockStyle}" Grid.Column="1" Margin="0,5,4,0" Width="10" HorizontalAlignment="Right"/>
+            </Grid>
+            <Rectangle Fill="#66FFFFFF" Height="1"  Stroke="Transparent" Margin="20,10,20,5"/>
+            <ListView x:Name="SearchResultsFemale" Margin="0,0,0,0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="0,0,0,0" Padding="0,10">
+                            <StackPanel Orientation="Horizontal" Margin="0" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <Ellipse Width="45" Height="45" Margin="15,0,0,0">
+                                    <Ellipse.Fill>
+                                        <ImageBrush ImageSource="{Binding Suspect.SuspectSearchImagePath}"/>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <StackPanel Orientation="Vertical" Margin="15,0,0,0">
+                                    <TextBlock Text="{Binding Suspect.Name}" Style="{StaticResource DetailSubtitleTextBlockStyle}" FontSize="14.667" Margin="0"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding Suspect.EyeColor}" Style="{StaticResource DetailSubtitleTextBlockStyle}" FontSize="10.667"/>
+                                        <TextBlock Text=" eyes," Style="{StaticResource DetailSubtitleTextBlockStyle}" FontSize="10.667"/>
+                                        <TextBlock Text="{Binding Suspect.HairColor}" Style="{StaticResource DetailSubtitleTextBlockStyle}" Margin="10,5,0,0" FontSize="10.667"/>
+                                        <TextBlock Text=" hair" Style="{StaticResource DetailSubtitleTextBlockStyle}" FontSize="10.667"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                            <CheckBox RequestedTheme="Dark" HorizontalAlignment="Right" Margin="0,0,-90,0" VerticalAlignment="Center" Width="122" Content="" IsChecked="{Binding AddToIncident, Mode=TwoWay}"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Rectangle x:Name="BottomRectangle" Fill="#66FFFFFF" Height="1"  Stroke="Transparent" Margin="20,10,20,5" Visibility="Collapsed"/>
+            <Button x:Name="DoneSelectingIdentites" Content="Done"  Click="OnDoneSelectingIdentitesClick" Style="{StaticResource SearchButtonButtonStyle}" Margin="0,10,20,0" Width="100" RequestedTheme="Dark" HorizontalAlignment="Right"/>
+        </StackPanel>
+    </Grid>
+</Page>

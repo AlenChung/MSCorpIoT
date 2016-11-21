@@ -1,0 +1,22 @@
+﻿{
+  "name": "FirstResponse",
+  "tables": [
+    {
+      "name": "DynamicIncidentData",
+      "columns": [
+        {
+          "name": "Current High Priority Incidents",
+          "dataType": "Int64"
+        },
+        {
+          "name": "Current Average Response Time",
+          "dataType": "Int64"
+        },
+        {
+          "name": "Current Unassigned Incidents",
+          "dataType": "Int64"
+        }
+      ]
+    }
+  ]
+}

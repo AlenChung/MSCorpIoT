@@ -1,0 +1,347 @@
+﻿[
+    {
+        "Id": 1,
+        "Priority": 0,
+        "CallNumber": "201-4387",
+        "Phone": "(555) XXX-XXXX",
+        "Title": "Poisoning",
+        "ReceivedTime": "2016-02-04T17:32:34.828662+13:00",
+        "Address": "Pine Lake Park, 2401 228th Ave Se, Sammamish, WA  98075",
+        "ReportingParty": "John XXXXX",
+        "Description": "Someone poisoned the water hole.",
+        "Latitude": 47.587700,
+        "Longitude": -122.037877,
+        "Responders": [
+            {
+                "DepartmentType": 3
+            }
+        ],
+        "IncidentCategory": 5
+    },
+  {
+    "Id": 2,
+    "Priority": 0,
+    "CallNumber": "201-4388",
+    "Phone": "(555) XXX-XXXX",
+    "Title": "Public Disturbance",
+    "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+    "Address": "Beaver Lake Park, 25101 SE 24th St, Sammamish, WA 98075",
+    "ReportingParty": "Jane XXXXX",
+    "Description": "Reports of a domestic disturbance reported by park maintenance.",
+    "Latitude": 47.587853,
+    "Longitude": -122.004659,
+    "Responders": [
+      {
+        "DepartmentType": 3
+      }
+    ],
+    "IncidentCategory": 4
+  },
+  {
+    "Id": 3,
+    "Priority": 0,
+    "CallNumber": "201-4389",
+    "Phone": "(555) XXX-XXXX",
+    "Title": "Stranger reported near school",
+    "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+    "Address": "24072 NE 8th St, Sammamish, WA 98074",
+    "ReportingParty": "Jane XXXXX",
+    "Description": "A man acting strangly reported near inglewood middle school",
+    "Latitude": 47.61672,
+    "Longitude": -122.018394,
+    "Responders": [
+      {
+        "DepartmentType": 1
+      }
+    ],
+    "IncidentCategory": 7
+  },
+  {
+    "Id": 4,
+    "Priority": 0,
+    "CallNumber": "201-4390",
+    "Phone": "(555) XXX-XXXX",
+    "Title": "Stray dog",
+    "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+    "Address": "228th Ave NE, Sammamish, WA 98074",
+    "ReportingParty": "John XXXXX",
+    "Description": "Stray dog acting aggressivly towards civilians",
+    "Latitude": 47.61563,
+    "Longitude": -122.035515,
+    "Responders": [
+      {
+        "DepartmentType": 1
+      }
+    ],
+    "IncidentCategory": 2
+  },
+    {
+        "Id": 5,
+        "Priority": 0,
+        "CallNumber": "201-4390",
+        "Phone": "(555) XXX-XXXX",
+        "Title": "House on fire",
+        "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+        "Address": "24092 SE 12th Pl, Sammamish, WA 98075",
+        "ReportingParty": "John XXXXX",
+        "Description": "House fire reported",
+        "Latitude": 47.597893,
+        "Longitude": -122.01724,
+        "Responders": [
+            {
+                "DepartmentType": 1
+            }
+        ],
+        "IncidentCategory": 5
+    },
+    {
+        "Id": 6,
+        "Priority": 0,
+        "CallNumber": "201-4390",
+        "Phone": "(555) XXX-XXXX",
+        "Title": "Woman involved in golf cart crash",
+        "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+        "Address": "24092 SE 12th Pl, Sammamish, WA 98075",
+        "ReportingParty": "John XXXXX",
+        "Description": "Golf cart colision at golf course, one woman with moderate injuries",
+        "Latitude": 47.597893,
+        "Longitude": -122.01724,
+        "Responders": [
+            {
+                "DepartmentType": 3
+            }
+        ],
+        "IncidentCategory": 1
+    },
+    {
+        "Id": 7,
+        "Priority": 0,
+        "CallNumber": "201-4390",
+        "Phone": "(555) XXX-XXXX",
+        "Title": "Car reported stolen",
+        "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+        "Address": "24067 NE 29th St, Sammamish, WA 98074",
+        "ReportingParty": "John XXXXX",
+        "Description": "Car reported stolen from street outside house over night",
+        "Latitude": 47.636307,
+        "Longitude": -122.01926,
+        "Responders": [
+            {
+                "DepartmentType": 1
+            }
+        ],
+        "IncidentCategory": 6
+    },
+    {
+        "Id": 8,
+        "Priority": 0,
+        "CallNumber": "201-4390",
+        "Phone": "(555) XXX-XXXX",
+        "Title": "Vandalism",
+        "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+        "Address": "Ebright Creek Park, 1389 212th Ave SE, Sammamish, WA 98075",
+        "ReportingParty": "John XXXXX",
+        "Description": "Vandalism reported in park, trash can set on fire, police and fire requested",
+        "Latitude": 47.597675,
+        "Longitude": -122.05807,
+        "Responders": [
+            {
+                "DepartmentType": 1
+            },
+            {
+                "DepartmentType": 2
+            }
+        ],
+        "IncidentCategory": 5
+    },
+    {
+        "Id": 9,
+        "Priority": 0,
+        "CallNumber": "201-4390",
+        "Phone": "(555) XXX-XXXX",
+        "Title": "Man fallen in water",
+        "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+        "Address": "Beaver Lake, SE 18th Pl, Sammamish, WA 98075",
+        "ReportingParty": "John XXXXX",
+        "Description": "A man has fallen in the lake, possible head injury",
+        "Latitude": 47.59348,
+        "Longitude": -121.99096,
+        "Responders": [
+            {
+                "DepartmentType": 3
+            }
+        ],
+        "IncidentCategory": 1
+    },
+    {
+        "Id": 10,
+        "Priority": 0,
+        "CallNumber": "201-4390",
+        "Phone": "(555) XXX-XXXX",
+        "Title": "Speeding",
+        "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+        "Address": "24442 SE 32nd St, WA 98075",
+        "ReportingParty": "John XXXXX",
+        "Description": "Reported speeding car, green 2 door sedan with Washington plates",
+        "Latitude": 47.58073,
+        "Longitude": -122.01355,
+        "Responders": [
+            {
+                "DepartmentType": 1
+            }
+        ],
+        "IncidentCategory": 4
+    },
+    {
+        "Id": 11,
+        "Priority": 0,
+        "CallNumber": "201-4390",
+        "Phone": "(555) XXX-XXXX",
+        "Title": "Car break in",
+        "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+        "Address": "383 220th Pl SE, Sammamish, WA 98074",
+        "ReportingParty": "John XXXXX",
+        "Description": "Report of an individual wearing an orange hooded jacket breaking into a car",
+        "Latitude": 47.60554,
+        "Longitude": -122.04491,
+        "Responders": [
+            {
+                "DepartmentType": 1
+            }
+        ],
+        "IncidentCategory": 6
+    },
+    {
+        "Id": 12,
+        "Priority": 0,
+        "CallNumber": "201-4390",
+        "Phone": "(555) XXX-XXXX",
+        "Title": "Elderly person fallen in home",
+        "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+        "Address": "497 241st Ln SE, Sammamish, WA 98074",
+        "ReportingParty": "John XXXXX",
+        "Description": "An elderly person has fallen in their home",
+        "Latitude": 47.604218,
+        "Longitude": -122.01769,
+        "Responders": [
+            {
+                "DepartmentType": 3
+            }
+        ],
+        "IncidentCategory": 1
+    },
+    {
+        "Id": 13,
+        "Priority": 0,
+        "CallNumber": "201-4390",
+        "Phone": "(555) XXX-XXXX",
+        "Title": "Domestic disturbance",
+        "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+        "Address": "22086 NE 15th St, Sammamish, WA 98074",
+        "ReportingParty": "John XXXXX",
+        "Description": "Reports of a domestic disturbance reported by neighbour",
+        "Latitude": 47.62277,
+        "Longitude": -122.044334,
+        "Responders": [
+            {
+                "DepartmentType": 1
+            }
+        ],
+        "IncidentCategory": 6
+    },
+    {
+        "Id": 14,
+        "Priority": 0,
+        "CallNumber": "201-4390",
+        "Phone": "(555) XXX-XXXX",
+        "Title": "Domestic disturbance",
+        "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+        "Address": "23026 NE 13th St, Sammamish, WA 98074",
+        "ReportingParty": "John XXXXX",
+        "Description": "Reports of a domestic disturbance reported by neighbour",
+        "Latitude": 47.620926,
+        "Longitude": -122.030319,
+        "Responders": [
+            {
+                "DepartmentType": 1
+            }
+        ],
+        "IncidentCategory": 6
+    },
+    {
+        "Id": 15,
+        "Priority": 0,
+        "CallNumber": "201-4390",
+        "Phone": "(555) XXX-XXXX",
+        "Title": "Car crash",
+        "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+        "Address": "26666 NE Ames Lake Rd, Redmond, WA 98053",
+        "ReportingParty": "John XXXXX",
+        "Description": "Car crash, no serious injuries reported, accident is blocking both lanes",
+        "Latitude": 47.633244,
+        "Longitude": -121.984085,
+        "Responders": [
+            {
+                "DepartmentType": 1
+            }
+        ],
+        "IncidentCategory": 6
+    },
+    {
+        "Id": 16,
+        "Priority": 0,
+        "CallNumber": "201-4390",
+        "Phone": "(555) XXX-XXXX",
+        "Title": "Cat stuck in tree",
+        "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+        "Address": "22126 NE 11th Pl, Sammamish, WA 98074",
+        "ReportingParty": "John XXXXX",
+        "Description": "There is a cat stuck in a tree, requires fire unit with ladder",
+        "Latitude": 47.619714,
+        "Longitude": -122.045077,
+        "Responders": [
+            {
+                "DepartmentType": 2
+            }
+        ],
+        "IncidentCategory": 1
+    },
+    {
+        "Id": 17,
+        "Priority": 0,
+        "CallNumber": "201-4390",
+        "Phone": "(555) XXX-XXXX",
+        "Title": "Car broken down in middle of road",
+        "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+        "Address": "2368 205th Ave SE, Sammamish, WA 98075",
+        "ReportingParty": "John XXXXX",
+        "Description": "A car is immobile and blocking traffic",
+        "Latitude": 47.58856,
+        "Longitude": -122.06611,
+        "Responders": [
+            {
+                "DepartmentType": 2
+            }
+        ],
+        "IncidentCategory": 4
+    },
+    {
+        "Id": 18,
+        "Priority": 0,
+        "CallNumber": "201-4390",
+        "Phone": "(555) XXX-XXXX",
+        "Title": "Public Disturbance",
+        "ReceivedTime": "2016-02-04T17:35:34.8316737+13:00",
+        "Address": "Sahalee Way NE, Sammamish, WA 98074",
+        "ReportingParty": "John XXXXX",
+        "Description": "Reports of an altercation between two individuals at bus stop",
+        "Latitude": 47.63781,
+        "Longitude": -122.047066,
+        "Responders": [
+            {
+                "DepartmentType": 1
+            }
+        ],
+        "IncidentCategory": 6
+    }
+]

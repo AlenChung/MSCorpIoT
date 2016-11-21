@@ -1,0 +1,52 @@
+﻿[
+  {
+    "Id": 1,
+    "RoutePoints": [
+      {
+        "Latitude": 47.588288,
+        "Longitude": -122.024835
+      },
+      {
+        "Latitude": 47.587962,
+        "Longitude": -122.013098
+      },
+      {
+        "Latitude": 47.602932,
+        "Longitude": -122.013862
+      },
+      {
+        "Latitude": 47.601701,
+        "Longitude": -122.035668
+      },
+      {
+        "Latitude": 47.588451,
+        "Longitude": -122.035609
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "RoutePoints": [
+      {
+        "Latitude": 47.605526,
+        "Longitude": -122.036156
+      },
+      {
+        "Latitude": 47.606307,
+        "Longitude": -122.048988
+      },
+      {
+        "Latitude": 47.623685,
+        "Longitude": -122.051807
+      },
+      {
+        "Latitude": 47.620575,
+        "Longitude": -122.035692
+      },
+      {
+        "Latitude": 47.622022,
+        "Longitude":-122.024985
+      }
+    ]
+  }
+]

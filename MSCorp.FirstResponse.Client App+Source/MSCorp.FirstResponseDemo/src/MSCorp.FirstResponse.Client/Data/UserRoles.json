@@ -1,0 +1,20 @@
+﻿[
+  {
+    "RoleName": "Supervisor",
+    "Name": "Evan Dodds",
+    "UserName": "edodds",
+    "UserRoleImage": "/Assets/profile/adambig (002).jpg"
+  },
+  {
+    "RoleName": "Attending Officer",
+    "Name": "John Clarkson",
+    "UserName": "jclarkson",
+    "UserRoleImage": "/Assets/profile/benbig (002).jpg"
+  },
+  {
+    "RoleName": "Officer",
+    "Name": "Ben Martens",
+    "UserName": "bmartens",
+    "UserRoleImage": "/Assets/profile/Charliebig (002).jpg"
+  }
+]

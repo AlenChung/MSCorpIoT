@@ -1,0 +1,167 @@
+[
+  {
+    "Id": 100,
+    "CallNumber": "425-4387",
+    "Phone": "(425) XXX-XXXX",
+    "Title": "Vandalism",
+    "ReceivedTime": "2016-02-04T17:32:34.828662+13:00",
+    "Address": "1296 140th Pl NE, Bellevue, WA 98007",
+    "ReportingParty": "",
+    "Description": "Individual reported tagging public property",
+    "Latitude": 47.62149,
+    "Longitude": -122.152534,
+    "Responders": [
+      {
+        "DepartmentType": 1
+      }
+    ],
+    "IncidentCategory": 6
+  },
+  {
+    "Id": 101,
+    "CallNumber": "425-9873",
+    "Phone": "(425) XXX-XXXX",
+    "Title": "Car crash",
+    "ReceivedTime": "2016-02-04T17:32:34.828662+13:00",
+    "Address": "1636 168th Pl NE, Bellevue, WA 98008",
+    "ReportingParty": "",
+    "Description": "Nose to tail car crash",
+    "Latitude": 47.624844,
+    "Longitude": -122.115288,
+    "Responders": [
+      {
+        "DepartmentType": 1
+      },
+      {
+        "DepartmentType": 2
+      }
+    ],
+    "IncidentCategory": 4
+  },
+  {
+    "Id": 102,
+    "CallNumber": "425-9873",
+    "Phone": "(425) XXX-XXXX",
+    "Title": "Ambulance needed",
+    "ReceivedTime": "2016-02-04T17:32:34.828662+13:00",
+    "Address": "1636 168th Pl NE, Bellevue, WA 98008",
+    "ReportingParty": "",
+    "Description": "Elderly man having difficulty speaking, possibe stroke",
+    "Latitude": 47.602741,
+    "Longitude": -122.136055,
+    "Responders": [
+      {
+        "DepartmentType": 3
+      }
+    ],
+    "IncidentCategory": 1
+  },
+  {
+    "Id": 103,
+    "CallNumber": "425-6453",
+    "Phone": "(425) XXX-XXXX",
+    "Title": "Break in reported",
+    "ReceivedTime": "2016-02-04T17:32:34.828662+13:00",
+    "Address": "15355 SE Lake Hills Blvd, Bellevue, WA 98007",
+    "ReportingParty": "",
+    "Description": "Burglery reported",
+    "Latitude": 47.602741,
+    "Longitude": -122.136055,
+    "Responders": [
+      {
+        "DepartmentType": 1
+      }
+    ],
+    "IncidentCategory": 1
+  },
+  {
+    "Id": 104,
+    "CallNumber": "425-6453",
+    "Phone": "(425) XXX-XXXX",
+    "Title": "Child stuck on roof of tall building",
+    "ReceivedTime": "2016-02-04T17:32:34.828662+13:00",
+    "Address": "164th Ct NE, Redmond, WA 98052",
+    "ReportingParty": "",
+    "Description": "A small child has climbed out of a window and is stuck on top of a building",
+    "Latitude": 47.650291,
+    "Longitude": -122.122498,
+    "Responders": [
+      {
+        "DepartmentType": 2
+      }
+    ],
+    "IncidentCategory": 1
+  },
+  {
+    "Id": 105,
+    "CallNumber": "425-2235",
+    "Phone": "(425) XXX-XXXX",
+    "Title": "Cyclist fallen off bike",
+    "ReceivedTime": "2016-02-04T17:32:34.828662+13:00",
+    "Address": "3407 126th Ave NE, Bellevue, WA 98005",
+    "ReportingParty": "",
+    "Description": "A cyclist has fallen over, possible broken arm",
+    "Latitude": 47.641041,
+    "Longitude": -122.173477,
+    "Responders": [
+      {
+        "DepartmentType": 3
+      }
+    ],
+    "IncidentCategory": 1
+  },
+  {
+    "Id": 106,
+    "CallNumber": "425-4324",
+    "Phone": "(425) XXX-XXXX",
+    "Title": "House fire",
+    "ReceivedTime": "2016-02-04T17:32:34.828662+13:00",
+    "Address": "1413 102nd Ave NE, Bellevue, WA 98004",
+    "ReportingParty": "",
+    "Description": "Fire reported in a residential house",
+    "Latitude": 47.623226,
+    "Longitude": -122.205238,
+    "Responders": [
+      {
+        "DepartmentType": 3
+      }
+    ],
+    "IncidentCategory": 1
+  },
+  {
+    "Id": 107,
+    "CallNumber": "425-8764",
+    "Phone": "(425) XXX-XXXX",
+    "Title": "Disturbance",
+    "ReceivedTime": "2016-02-04T17:32:34.828662+13:00",
+    "Address": "1725 114th Ave SE, Bellevue, WA 98004",
+    "ReportingParty": "",
+    "Description": "Report of 3 transient individuals harassing members of the public",
+    "Latitude": 47.595798,
+    "Longitude": -122.191849,
+    "Responders": [
+      {
+        "DepartmentType": 1
+      }
+    ],
+    "IncidentCategory": 1
+  },
+  {
+    "Id": 108,
+    "CallNumber": "425-3222",
+    "Phone": "(425) XXX-XXXX",
+    "Title": "Stray dog",
+    "ReceivedTime": "2016-02-04T17:32:34.828662+13:00",
+    "Address": "128th Ave SE, Bellevue, WA 98005",
+    "ReportingParty": "",
+    "Description": "A stray dog has been sighted in the area",
+    "Latitude": 47.603436,
+    "Longitude": -122.169189,
+    "Responders": [
+      {
+        "DepartmentType": 1
+      }
+    ],
+    "IncidentCategory": 2
+  }
+]

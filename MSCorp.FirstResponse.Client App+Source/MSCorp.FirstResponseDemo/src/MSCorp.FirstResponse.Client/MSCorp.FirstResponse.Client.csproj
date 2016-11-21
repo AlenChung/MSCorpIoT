@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{F21D8396-48D1-4940-A7FC-7A7626DFC243}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MSCorp.FirstResponse.Client</RootNamespace>
+    <AssemblyName>MSCorp.FirstResponse.Client</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>MSCorp.FirstResponse.Client_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>08102E24608FE688C93984D019C28B759ED03530</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="Assets\button_details.png" />
+    <Content Include="Assets\button_location.png" />
+    <Content Include="Assets\DataHistogram-WF.png" />
+    <Content Include="Assets\pins\pins_bkgd.png" />
+    <Content Include="Assets\pins\pins_car_alert.png" />
+    <Content Include="Assets\profile\adambig %28002%29.jpg" />
+    <Content Include="Assets\profile\benbig %28002%29.jpg" />
+    <Content Include="Assets\profile\Charliebig %28002%29.jpg" />
+    <Content Include="Assets\Signin-Logo.png" />
+    <Content Include="Assets\suspect\JoyMiller.jpg" />
+    <Content Include="Assets\suspect\JayHenningsen.jpg" />
+    <Content Include="Assets\suspect\JoeAndreshak.jpg" />
+    <Content Include="Assets\suspect\JoaoCasqueiro.jpg" />
+    <Content Include="Assets\suspect\BillieJoMurray.jpg" />
+    <Content Include="Data\IncidentData.json" />
+    <Content Include="Data\ResponderData.json" />
+    <Content Include="Data\ResponderRoutes.json" />
+    <Content Include="Data\TicketData.json" />
+    <Content Include="Data\UserRoles.json" />
+    <Content Include="Data\SuspectData.json" />
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\DelegateCommand.cs" />
+    <Compile Include="Common\IncidentChangedEventArgs.cs" />
+    <Compile Include="Common\IncidentEventArgs.cs" />
+    <Compile Include="Common\IncidentHelper.cs" />
+    <Compile Include="Common\IncidentSelectedEventArgs.cs" />
+    <Compile Include="Common\IncidentTypeData.cs" />
+    <Compile Include="Common\StringExtensions.cs" />
+    <Compile Include="Common\ToastHelper.cs" />
+    <Compile Include="Controls\IncidentIcon.xaml.cs">
+      <DependentUpon>IncidentIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ResponderIcon.xaml.cs">
+      <DependentUpon>ResponderIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Controls\TicketIcon.xaml.cs">
+      <DependentUpon>TicketIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataRepository.cs" />
+    <Compile Include="Models\UserRole.cs" />
+    <Compile Include="Models\DepartmentType.cs" />
+    <Compile Include="Models\DeviceResponderUnit.cs" />
+    <Compile Include="Models\IncidentStatus.cs" />
+    <Compile Include="Models\IncidentType.cs" />
+    <Compile Include="Models\ResponderRequestModel.cs" />
+    <Compile Include="Models\ResponseStatus.cs" />
+    <Compile Include="Models\RouteModel.cs" />
+    <Compile Include="Models\IncidentModel.cs" />
+    <Compile Include="Models\ResponderModel.cs" />
+    <Compile Include="Models\SuspectModel.cs" />
+    <Compile Include="Models\TicketModel.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AuthenticationService.cs" />
+    <Compile Include="Services\IncidentManagerService.cs" />
+    <Compile Include="Services\MapControlService.cs" />
+    <Compile Include="Services\MockPositionChangedEventArgs.cs" />
+    <Compile Include="Services\MockGeolocator.cs" />
+    <Compile Include="Services\ResponderManagerService.cs" />
+    <Compile Include="Services\SuspectService.cs" />
+    <Compile Include="ViewModels\IncidentDetailsPaneViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModelBase.cs" />
+    <Compile Include="ViewModels\DashboardViewModel.cs" />
+    <Compile Include="ViewModels\IncidentListViewModel.cs" />
+    <Compile Include="ViewModels\IncidentViewModel.cs" />
+    <Compile Include="ViewModels\NewTicketPaneMasterViewModel.cs" />
+    <Compile Include="ViewModels\ResponderListViewModel.cs" />
+    <Compile Include="Common\RoleChangedEventArgs.cs" />
+    <Compile Include="ViewModels\ResponderViewModel.cs" />
+    <Compile Include="Views\AddIdentityPage.xaml.cs">
+      <DependentUpon>AddIdentityPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DashboardPage.xaml.cs">
+      <DependentUpon>DashboardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IncidentDetailsPaneView.xaml.cs">
+      <DependentUpon>IncidentDetailsPaneView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IncidentListPaneView.xaml.cs">
+      <DependentUpon>IncidentListPaneView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IncidentPage.xaml.cs">
+      <DependentUpon>IncidentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewTicketPaneArrestView.xaml.cs">
+      <DependentUpon>NewTicketPaneArrestView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewTicketPaneOtherView.xaml.cs">
+      <DependentUpon>NewTicketPaneOtherView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewTicketPanePedestrianView.xaml.cs">
+      <DependentUpon>NewTicketPanePedestrianView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewTicketPaneRobberyView.xaml.cs">
+      <DependentUpon>NewTicketPaneRobberyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewTicketPaneTrafficView.xaml.cs">
+      <DependentUpon>NewTicketPaneTrafficView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewTicketPaneMasterView.xaml.cs">
+      <DependentUpon>NewTicketPaneMasterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PowerBIPage.xaml.cs">
+      <DependentUpon>PowerBIPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ResponderListPaneView.xaml.cs">
+      <DependentUpon>ResponderListPaneView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TicketsListPaneView.xaml.cs">
+      <DependentUpon>TicketsListPaneView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="MSCorp.FirstResponse.Client_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\filter\button_nearby.png" />
+    <Content Include="Assets\filter\button_previous.png" />
+    <Content Include="Assets\filter\button_similar.png" />
+    <Content Include="Assets\filter\filter_fire.png" />
+    <Content Include="Assets\filter\filter_medic.png" />
+    <Content Include="Assets\filter\filter_police.png" />
+    <Content Include="Assets\icon\icon_alert.png" />
+    <Content Include="Assets\icon\icon_animal.png" />
+    <Content Include="Assets\icon\icon_arrest.png" />
+    <Content Include="Assets\icon\icon_car.png" />
+    <Content Include="Assets\icon\icon_fire.png" />
+    <Content Include="Assets\icon\icon_officer.png" />
+    <Content Include="Assets\icon\icon_stranger.png" />
+    <Content Include="Assets\nav\nav_accept.png" />
+    <Content Include="Assets\nav\nav_cancel.png" />
+    <Content Include="Assets\nav\nav_car.png" />
+    <Content Include="Assets\nav\nav_car_center.png" />
+    <Content Include="Assets\nav\nav_location.png" />
+    <Content Include="Assets\nav\nav_ticket.png" />
+    <Content Include="Assets\nav\radius.png" />
+    <Content Include="Assets\pins\pin_alert.png" />
+    <Content Include="Assets\pins\pin_animal.png" />
+    <Content Include="Assets\pins\pin_arrest.png" />
+    <Content Include="Assets\pins\pin_car.png" />
+    <Content Include="Assets\pins\pin_officer.png" />
+    <Content Include="Assets\pins\pin_other.png" />
+    <Content Include="Assets\pins\pin_pedestrian.png" />
+    <Content Include="Assets\pins\pin_siren.png" />
+    <Content Include="Assets\pins\pin_stranger.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Controls\IncidentIcon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ResponderIcon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddIdentityPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\TicketIcon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DashboardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\IncidentDetailsPaneView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\IncidentListPaneView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\IncidentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NewTicketPaneArrestView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NewTicketPaneOtherView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NewTicketPanePedestrianView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NewTicketPaneRobberyView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NewTicketPaneTrafficView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NewTicketPaneMasterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PowerBIPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ResponderListPaneView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TicketsListPaneView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

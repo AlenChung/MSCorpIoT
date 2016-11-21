@@ -1,0 +1,75 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MSCorp.FirstResponse.Client.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModels="using:MSCorp.FirstResponse.Client.ViewModels"
+    x:Class="MSCorp.FirstResponse.Client.Views.IncidentDetailsPaneView"
+    mc:Ignorable="d"
+    d:DesignWidth="320">
+
+    <Page.DataContext>
+        <ViewModels:IncidentDetailsPaneViewModel/>
+    </Page.DataContext>
+
+    <Grid Background="{ThemeResource SidePaneBackgroundThemeBrush}">
+        <StackPanel x:Name="Details"
+			Padding="10"
+			Visibility="{Binding SelectedIncidentDetailsVisible}"
+			Background="{ThemeResource SidePaneBackgroundThemeBrush}" Margin="10,5,10,0">
+            <TextBlock Text="DETAILS" Style="{StaticResource DetailHeaderTextBlockStyle}" FontSize="16" Margin="0,10" />
+
+            <TextBlock Text="Location" Style="{StaticResource DetailsPageSubtitleTextBlockStyle}" />
+            <TextBlock Text="{Binding Incident.Address}" Style="{StaticResource DetailPageBodyTextBlockStyle}" />
+
+            <TextBlock Text="Phone" Style="{StaticResource DetailsPageSubtitleTextBlockStyle}" />
+            <TextBlock Text="{Binding PhoneText, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource DetailPageBodyTextBlockStyle}" />
+
+            <TextBlock Text="Reporting party" Style="{StaticResource DetailsPageSubtitleTextBlockStyle}" />
+            <TextBlock Text="{Binding ReportingPartyText, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource DetailPageBodyTextBlockStyle}" />
+
+            <TextBlock Text="Call number" Style="{StaticResource DetailsPageSubtitleTextBlockStyle}" />
+            <TextBlock Text="{Binding Incident.CallNumber}" Style="{StaticResource DetailPageBodyTextBlockStyle}" />
+
+            <TextBlock Text="Received time" Style="{StaticResource DetailsPageSubtitleTextBlockStyle}" />
+            <TextBlock Text="{Binding ReceivedTime}" Style="{StaticResource DetailPageBodyTextBlockStyle}" />
+
+            <Rectangle Fill="#FFE2E1E6" Height="1" Margin="0,15,0,5"/>
+
+            <TextBlock Text="NOTES" Style="{StaticResource DetailsPageSubtitleTextBlockStyle}" TextWrapping="NoWrap"/>
+            <TextBlock Text="{Binding Incident.Description}" Style="{StaticResource DetailBodyTextBlockStyle}" Margin="0,10,0,0" />
+
+            <Rectangle x:Name="OffendersRectangle" Fill="#FFE2E1E6" Height="1" Margin="0,15,0,5"/>
+            <Grid Margin="0,15,0,0">
+                <TextBlock Text="OFFENDER(S)" x:Name="OffendersLabel" Style="{StaticResource DetailSubtitleTextBlockStyle}" />
+                <Button x:Name="AddIdentityButton" Visibility="Collapsed" Content="Identify" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="135,0,0,0" Click="AddIdentityButton_Click" Style="{StaticResource SearchButtonButtonStyle}" Foreground="White" Width="145"/>
+            </Grid>
+
+            <ListView x:Name="Offenders" Margin="0,0,0,0" ItemsSource="{Binding Incident.Identities}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="-10,0,0,0" Padding="0,10">
+                            <StackPanel Orientation="Horizontal" Margin="0" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <Ellipse Width="45" Height="45" Margin="17,0,0,0">
+                                    <Ellipse.Fill>
+                                        <ImageBrush ImageSource="{Binding SuspectSearchImagePath}"/>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <StackPanel Orientation="Vertical" Margin="15,0,0,0">
+                                    <TextBlock Text="{Binding Name}" Style="{StaticResource DetailSubtitleTextBlockStyle}" FontSize="14.667" Margin="0"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding EyeColor}" Style="{StaticResource DetailSubtitleTextBlockStyle}" FontSize="10.667"/>
+                                        <TextBlock Text=" eyes," Style="{StaticResource DetailSubtitleTextBlockStyle}" FontSize="10.667"/>
+                                        <TextBlock Text="{Binding HairColor}" Style="{StaticResource DetailSubtitleTextBlockStyle}" Margin="10,5,0,0" FontSize="10.667"/>
+                                        <TextBlock Text=" hair" Style="{StaticResource DetailSubtitleTextBlockStyle}" FontSize="10.667"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</Page>

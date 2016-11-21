@@ -1,0 +1,75 @@
+﻿<Page
+    x:Class="MSCorp.FirstResponse.Client.Views.NewTicketPaneTrafficView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModels="using:MSCorp.FirstResponse.Client.ViewModels"
+    mc:Ignorable="d"
+    d:DesignWidth="320">
+
+    <Page.DataContext>
+        <viewModels:NewTicketPaneMasterViewModel/>
+    </Page.DataContext>
+
+    <StackPanel Background="{ThemeResource SidePaneBackgroundThemeBrush}">
+        <TextBlock Text="Issuing Officer" Style="{StaticResource DetailSubtitleTextBlockStyle}" />
+        <TextBlock Text="{Binding IssuingOfficer}" Style="{StaticResource DetailBodyTextBlockStyle}" />
+        <TextBlock Text="Location" Style="{StaticResource DetailSubtitleTextBlockStyle}" />
+        <TextBlock Text="{Binding Location}" Style="{StaticResource DetailBodyTextBlockStyle}" />
+        <TextBlock Text="Time" Style="{StaticResource DetailSubtitleTextBlockStyle}" />
+        <TextBlock Text="{Binding Time}" Style="{StaticResource DetailBodyTextBlockStyle}" />
+
+        <TextBlock Text="Driver" Style="{StaticResource DetailSubtitleTextBlockStyle}" />
+        <TextBox RequestedTheme="Dark" Text="{Binding SuspectName}"/>
+
+        <TextBlock Text="License No" Style="{StaticResource DetailSubtitleTextBlockStyle}" />
+        <TextBox RequestedTheme="Dark"/>
+        
+        <Rectangle Fill="White" Height="1" Margin="0,15,0,0" />
+
+        <TextBlock Text="Details" Style="{StaticResource DetailSubtitleTextBlockStyle}" />
+
+        <ComboBox x:Name="TrafficViolationType" HorizontalAlignment="Stretch" Margin="0, 5" PlaceholderText="Select Traffic Violation" RequestedTheme="Dark" BorderThickness="2" SelectionChanged="OnTrafficViolationTypeSelectionChanged">
+            <ComboBoxItem x:Name="SpeedingItem"  Content="Speeding" />
+            <ComboBoxItem Content="Impeding Traffic" />
+            <ComboBoxItem Content="Illegal Maneuver" />
+            <ComboBoxItem Content="Hit and Run" />
+            <ComboBoxItem Content="Reckless Driving" />
+        </ComboBox>
+
+        <Grid x:Name="DetailsSpeedingGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Max Speed" Style="{StaticResource DetailSubtitleTextBlockStyle}" />
+            <TextBox Grid.Row="1"  Grid.Column="0" Text="55"  RequestedTheme="Dark"/>   
+
+            <TextBlock Grid.Row="0"  Grid.Column="2" Text="Area" Style="{StaticResource DetailSubtitleTextBlockStyle}" />
+            <TextBox Grid.Row="1"  Grid.Column="2" Text="680"  RequestedTheme="Dark"/>
+
+            <TextBlock Grid.Row="2"  Grid.Column="0" Text="Approx" Style="{StaticResource DetailSubtitleTextBlockStyle}" />
+            <TextBox Grid.Row="3" Grid.Column="0" RequestedTheme="Dark"/>
+
+            <TextBlock  Grid.Row="2" Grid.Column="2" Text="Beat" Style="{StaticResource DetailSubtitleTextBlockStyle}" />
+            <TextBox  Grid.Row="3" Grid.Column="2" Text="16"  RequestedTheme="Dark"/>
+
+        </Grid>
+
+        <Rectangle Fill="White" Height="1" Margin="0,15,0,0" />
+
+        <TextBlock Text="Note/Violation(s)" Style="{StaticResource DetailSubtitleTextBlockStyle}" />
+        <TextBox Height="80" RequestedTheme="Dark" />
+
+    </StackPanel>
+</Page>
