@@ -101,7 +101,11 @@
     <Content Include="Assets\profile\adambig %28002%29.jpg" />
     <Content Include="Assets\profile\benbig %28002%29.jpg" />
     <Content Include="Assets\profile\Charliebig %28002%29.jpg" />
+    <Content Include="Assets\profile\Frank.jpg" />
     <Content Include="Assets\Signin-Logo.png" />
+    <Content Include="Assets\suspect\Allen.jpg" />
+    <Content Include="Assets\suspect\David.jpg" />
+    <Content Include="Assets\suspect\Hank.jpg" />
     <Content Include="Assets\suspect\JoyMiller.jpg" />
     <Content Include="Assets\suspect\JayHenningsen.jpg" />
     <Content Include="Assets\suspect\JoeAndreshak.jpg" />

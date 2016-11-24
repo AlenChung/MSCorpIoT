@@ -1,19 +1,19 @@
 ﻿[
   {
-    "Name": "Jay Henningsen",
+    "Name": "David",
     "EyeColor": "Blue",
     "HairColor": "Brown",
     "SkinColor": "White",
     "Sex": "Male",
-    "SuspectSearchImage": "JayHenningsen.jpg"
+    "SuspectSearchImage": "David.jpg"
   },
   {
-    "Name": "Joe Andreshak",
+    "Name": "Hank",
     "EyeColor": "Brown",
     "HairColor": "Black",
     "SkinColor": "White",
     "Sex": "Male",
-    "SuspectSearchImage": "JoeAndreshak.jpg"
+    "SuspectSearchImage": "Hank.jpg"
   },
   {
     "Name": "Joy Miller",
@@ -24,12 +24,12 @@
     "SuspectSearchImage": "JoyMiller.jpg"
   },
   {
-    "Name": "Joao Casqueiro",
+    "Name": "Allen",
     "EyeColor": "Brown",
     "HairColor": "Red",
     "SkinColor": "White",
     "Sex": "Male",
-    "SuspectSearchImage": "JoaoCasqueiro.jpg"
+    "SuspectSearchImage": "Allen.jpg"
   },
   {
     "Name": "Billie Jo Murray",
