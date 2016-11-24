@@ -14,11 +14,11 @@ namespace MSCorp.FirstResponse.Client
         public static readonly Geopoint StartLocation = new Geopoint(new BasicGeoposition { Latitude = 25.081182, Longitude = 121.586708 });
         public static readonly TimeSpan UpdateInterval = TimeSpan.FromMilliseconds(80);
         public static readonly BasicGeoposition[] PolygonSearch = {
-            new BasicGeoposition { Latitude = 25.032282, Longitude = 121.568276 },
-            new BasicGeoposition { Latitude = 47.580847, Longitude = -122.022217 },
-            new BasicGeoposition { Latitude = 47.577210, Longitude = -122.014425 },
-            new BasicGeoposition { Latitude = 47.577954, Longitude = -122.003700 },
-            new BasicGeoposition { Latitude = 47.584410, Longitude = -122.003914 }
+            new BasicGeoposition { Latitude = 25.051556, Longitude = 121.554996 },//Denfender Net Check 
+            new BasicGeoposition { Latitude = 25.050073, Longitude = 121.569591 },
+            new BasicGeoposition { Latitude = 25.046407, Longitude = 121.571182 },
+            new BasicGeoposition { Latitude = 25.043524, Longitude = 121.567135 },
+            new BasicGeoposition { Latitude = 25.039857, Longitude = 121.567365 }
         };
 
         public static TimeSpan TimeToResolve { get; } = TimeSpan.FromSeconds(30);
