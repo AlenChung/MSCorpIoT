@@ -9,7 +9,7 @@ namespace MSCorp.FirstResponse.Client.ViewModels
 {
     public class LoginViewModel: MainViewModelBase
     {
-        private const string DefaultUser = "jclarkson";
+        private const string DefaultUser = "Frank";//Set Default User otherwise can't run the code with only change Photo
 
         private readonly UserRole[] _userRoles;
         private Action<UserRole> _authenticatedFunction;

@@ -1,48 +1,48 @@
 ﻿[
   {
     "id": 2,
-    "Latitude": 47.594612,
-    "Longitude": -122.026981,
+    "Latitude": 25.031983,     //Fire Car 
+    "Longitude": 121.566293,
     "ResponderDepartment": 2,
     "RouteId": 1,
     "Status": 1
   },
   {
-    "id": 3,
-    "Latitude": 47.578817,
-    "Longitude": -122.051171,
+    "id": 3,                //Ambulance
+    "Latitude": 25.030413,
+    "Longitude":121.553472,
     "ResponderDepartment": 3,
     "RouteId": 2,
     "Status": 1
   },
   {
-    "id": 4,
-    "Latitude": 47.587962,
-    "Longitude": -122.013098,
+    "id": 4,               //police
+    "Latitude":25.041391,
+    "Longitude": 121.557887,
     "ResponderDepartment": 1,
     "RouteId": 1,
     "Status": 1
   },
   {
-    "id": 5,
-    "Latitude": 47.602932,
-    "Longitude": -122.013862,
+    "id": 5,                 //ambulance
+    "Latitude":25.043706,   
+    "Longitude":121.552125,
     "ResponderDepartment": 3,
     "RouteId": 2,
     "Status": 1
   },
   {
-    "id": 6,
-    "Latitude": 47.601701,
-    "Longitude": -122.035668,
+    "id": 6,                 //Fire
+    "Latitude": 25.047279,
+    "Longitude":121.572763,
     "ResponderDepartment": 2,
     "RouteId": 1,
     "Status": 1
   },
   {
     "id": 7,
-    "Latitude": 47.588451,
-    "Longitude": -122.035609,
+    "Latitude":25.045587,
+    "Longitude": 121.572052,
     "ResponderDepartment": 1,
     "RouteId": 2,
     "Status": 1
