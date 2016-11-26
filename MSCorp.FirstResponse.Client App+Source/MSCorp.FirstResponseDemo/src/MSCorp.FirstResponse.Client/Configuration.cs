@@ -11,7 +11,11 @@ namespace MSCorp.FirstResponse.Client
         public const double ZoomLevel = 16.1;    //If you want to Change your map zoom size
         public const double IncidentZoomLevel = 16;
 
+<<<<<<< HEAD
         public static readonly Geopoint StartLocation = new Geopoint(new BasicGeoposition { Latitude = 25.045581, Longitude = 121.573011 });
+=======
+        public static readonly Geopoint StartLocation = new Geopoint(new BasicGeoposition { Latitude = 25.081182, Longitude = 121.586708 });
+>>>>>>> 02c8822562fc23f5e0a97193f4833b92dc41aeea
         public static readonly TimeSpan UpdateInterval = TimeSpan.FromMilliseconds(80);
         public static readonly BasicGeoposition[] PolygonSearch = {
             new BasicGeoposition { Latitude = 25.051556, Longitude = 121.554996 },//Denfender Net Check 
@@ -33,8 +37,13 @@ namespace MSCorp.FirstResponse.Client
         public const double MovementSpeed = 0.0001; //0.00004;
         public const int MaxIncidentsInProgress = 15;
 
+<<<<<<< HEAD
         public const double UserLatitude = 25.041687;    // This is my user point & user-car
         public const double UserLongitude = 121.562737;  
+=======
+        public const double UserLatitude = 25.041687;    //47.588400  This is my user point & user-car
+        public const double UserLongitude = 121.562737;  //-122.035594
+>>>>>>> 02c8822562fc23f5e0a97193f4833b92dc41aeea
 
         public const double MapStartLatitude = 25.038182;    //Allen UI Start Point with FirstResponse MS-TW
         public const double MapStartLongitude = 121.567362;

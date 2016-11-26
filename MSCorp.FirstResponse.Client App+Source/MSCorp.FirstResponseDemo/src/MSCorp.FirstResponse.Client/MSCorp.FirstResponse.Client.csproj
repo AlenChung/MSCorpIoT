@@ -105,7 +105,10 @@
     <Content Include="Assets\Signin-Logo.png" />
     <Content Include="Assets\suspect\Allen.jpg" />
     <Content Include="Assets\suspect\David.jpg" />
+<<<<<<< HEAD
     <Content Include="Assets\suspect\Esme.jpg" />
+=======
+>>>>>>> 02c8822562fc23f5e0a97193f4833b92dc41aeea
     <Content Include="Assets\suspect\Hank.jpg" />
     <Content Include="Assets\suspect\JoyMiller.jpg" />
     <Content Include="Assets\suspect\JayHenningsen.jpg" />
