@@ -1,5 +1,5 @@
 # MSCorpIoT
-Microsoft IoT Demo with SQL and BingMap
+Microsoft Corp IoT Demo with  Taiwan BingMap
 
 
 執行應用程式畫面：
