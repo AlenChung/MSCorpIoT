@@ -1,0 +1,20 @@
+﻿[
+  {
+    "RoleName": "Supervisor",
+    "Name": "Evan Dodds",
+    "UserName": "edodds",
+    "UserRoleImage": "/Assets/profile/adambig (002).jpg"
+  },
+  {
+    "RoleName": "警長大大",  //Police Photo
+    "Name": "Frank ",
+    "UserName": "Frank",
+    "UserRoleImage": "/Assets/profile/Frank.jpg"
+  },
+  {
+    "RoleName": "Officer",
+    "Name": "Ben Martens",
+    "UserName": "bmartens",
+    "UserRoleImage": "/Assets/profile/Charliebig (002).jpg"
+  }
+]
