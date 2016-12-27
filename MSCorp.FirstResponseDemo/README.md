@@ -1,9 +1,3 @@
-Import-Module C:\Dev\MSCorp.FirstResponse\util\MSCorp.DocumentDb.Commands\MSCorp.DocumentDb.Commands\bin\Debug\MSCorp.DocumentDb.Commands.dll
-Add-DocumentDbSeedData 
-https://leef-fr-docdb.documents.azure.com:443/
-C0nPH61pkq7IR6H6lpp7NUbj9p/Dn2Lz749FBDGK2EdcRbkOqQ1XSHnRAcnPqnLUbZaG7sj+Hf2Hk4fp+2Xq3Q==
-C:\Dev\MSCorp.FirstResponse\deployment\DocumentDb\TicketData.json
-
 
 SELECT * 
 FROM x
